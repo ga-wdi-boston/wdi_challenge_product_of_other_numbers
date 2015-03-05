@@ -1,39 +1,23 @@
 ![General Assembly Logo](http://i.imgur.com/ke8USTq.png)
 
-# Assignment Name (Ruby String Lab)
-
-## Objectives
-
-By the end of this, students should be able to:
-
-- Objective 1
-- Objective 2
-- Objective 3
+# WDI Challenge: Product of All Other Numbers
 
 ## Instructions
 
-Include explict step-by-step instructions about the goals of the assignment, and how to run the code.
+You have an array of integers, and for each index you want to find the product of every integer except the integer at that index.
 
-Make sure to wrap section of code in appropriate markdown like `ls -al`, and denote the language as below for longer sections:
+Write a function get_products_of_all_ints_except_at_index() that takes an array of integers and returns an array of the products.
+
+For example, given:
 
 ```ruby
-x = 2
-y = 3
-puts x + y
+[1, 7, 3, 4]
 ```
-
-## Bonus (Optional Section)
-
-If you're looking for extra challenge or practice once you've completed the above, try to...
-
-## Notes
-
-Gotcha's and extra information
-
-## Additional Resources
-
-List additional related resources such as videos, blog posts and official documentation.
-
-- Item 1
-- Item 2
-- Item 3
+your function would return:
+```ruby
+[84, 12, 28, 21]
+```
+by calculating:
+```ruby
+[7*3*4, 1*3*4, 1*7*4, 1*7*3]
+```
